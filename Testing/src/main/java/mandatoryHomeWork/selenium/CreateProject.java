@@ -1,4 +1,4 @@
-package selfLearning.selenium;
+package mandatoryHomeWork.selenium;
 
 import java.time.Duration;
 import java.util.List;

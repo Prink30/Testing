@@ -1,4 +1,4 @@
-package SDETSelenium;
+package mandatoryHomeWork.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

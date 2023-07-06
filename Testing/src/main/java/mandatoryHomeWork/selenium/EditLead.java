@@ -1,4 +1,4 @@
-package SDETSelenium;
+package mandatoryHomeWork.selenium;
 
 import java.time.Duration;
 

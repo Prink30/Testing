@@ -92,18 +92,17 @@ String oldwindow = driver.getWindowHandle();
 		WebElement lastname = driver.findElement(By.xpath("(//input[@placeholder='Last Name'])[1]"));
 		lastname.sendKeys("G");
 		
-		WebElement gender = driver.findElement(By.xpath("//div[@class='adultItem']/div/div/label[2]"));
+		WebElement gender = driver.findElement(By.xpath("(//div[@class='adultItem']/div/div/label[2])[1]"));
 		gender.click();
 		
 		//
 		
-      //  driver.findElement(By.xpath("//button[text()='+ ADD NEW INFANT']")).click();
+        driver.findElement(By.xpath("//button[text()='+ ADD NEW INFANT']")).click();
 		
-		//driver.findElement(By.xpath("(//input[@type='checkbox'])[3]")).click();
 		
         Thread.sleep(2000);
         
-	/*	WebElement firstname1 = driver.findElement(By.xpath("(//input[@placeholder='First & Middle Name'])[2]"));
+		WebElement firstname1 = driver.findElement(By.xpath("(//input[@placeholder='First & Middle Name'])[2]"));
 		firstname1.sendKeys("Shalu");
 		
 		WebElement lastname1 = driver.findElement(By.xpath("(//input[@placeholder='Last Name'])[2]"));
@@ -111,17 +110,22 @@ String oldwindow = driver.getWindowHandle();
 		
 		Thread.sleep(3000);
 		
-	//	WebElement gender2 = driver.findElement(By.xpath("//div[@class='adultItem']/div/div/label[2]"));
-	//	gender2.click();
+		WebElement gender2 = driver.findElement(By.xpath("(//div[@class='adultItem']/div/div/label[2])[2]"));
+		gender2.click();
 		
 		WebElement date11 = driver.findElement(By.xpath("//div[text()='Date']"));
-		date11.sendKeys("30");
+		date11.click();
+		
+		driver.findElement(By.xpath("//div[@class='dropdown__menu-list css-11unzgr']/div[2]")).click();
+		
 		
 		WebElement month = driver.findElement(By.xpath("//div[text()='Month']"));
-		month.sendKeys("08");
+		month.click();
+		driver.findElement(By.xpath("(//div[@class='dropdown__menu-list css-11unzgr']/div[2]")).click();
 		
-		WebElement year = driver.findElement(By.xpath("//div[text()='Year']"));
-	    year.sendKeys("1994"); */
+	//	WebElement year = driver.findElement(By.xpath("//div[text()='Year']"));
+	//	year.click();
+	//	driver.findElement(By.xpath("(//div[@class='dropdown__single-value css-1uccc91-singleValue'])[3]")).click();
 		
 	//	WebElement email = driver.findElement(By.xpath("//div[@class='adultItem']/div/div/label[2]"));
 	//	email.click();
@@ -132,13 +136,12 @@ String oldwindow = driver.getWindowHandle();
 		WebElement checkbox = driver.findElement(By.xpath("//input[@placeholder='Email']"));
 		checkbox.sendKeys("test@gmail.com");
 		
+		WebElement checkbox1 = driver.findElement(By.xpath("//div[@class='emailIds-dropdown']/div[@class='emailId']"));
+		checkbox1.click();
+		
 		Thread.sleep(3000);
 		
-		WebElement checkbox2 = driver.findElement(By.xpath("//input[@placeholder='Email']"));
-		checkbox2.click();
 		
-		WebElement checkbox11 = driver.findElement(By.xpath("//span[@class='checkboxWpr']"));
-		checkbox11.click();
 		
 		WebElement continue1 = driver.findElement(By.xpath("//button[text()='Continue']"));
 		continue1.click();
